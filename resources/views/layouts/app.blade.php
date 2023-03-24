@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    {{-- <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json"> --}}
     <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
     <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
@@ -37,7 +37,7 @@
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="bi bi-telephone-fill">
-                            021 – 250 0120</i></a></li>
+                            +6221 – 250 0120</i></a></li>
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i
                             class="bi bi-envelope-fill"></i> info@sumberglobalenergy.com</a></li>
 
@@ -50,20 +50,20 @@
     </nav>
 
     <section class="bg-secondary">
-        <div class="container border-bottom">
+        <div class="container">
 
             <header class="py-2">
                 <!-- Fixed navbar -->
                 <nav class="navbar navbar-expand-xl">
-                    <div class="container-fluid">
-                        <a href="/" class="navbar-brand mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <div class="container-fluid  align-items-center">
+                        <a href="/" class="navbar-brand mb-md-0 me-md-auto text-dark text-decoration-none">
 
                             <img src="/img/logo-icon-smga.png" class="img-fluid me-2" style=" width: 40px; ">
-                            <span class="fs-4 fw-bold text-white"> PT. Sumber Mineral Global Abadi Tbk</span>
+                            <span class="fw-bold text-white sitetitle"> PT. Sumber Mineral Global Abadi Tbk</span>
                         </a>
-                        <button class="navbar-toggler collapsed bg-primary" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                        <button class="navbar-toggler btn-sm collapsed bg-primary" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon "></span>
                         </button>
                         <div class="navbar-collapse collapse" id="navbarCollapse" style="">
@@ -160,7 +160,7 @@
 
                 </div>
                 <!-- End Col -->
-                <div class="col-md-12 col-lg-8 ">
+                <div class="col-md-12 col-lg-8 mt-4 ">
                     <div class="row ">
                         <div class="col-md-6 ">
                             <div class="contact-us ">
@@ -184,7 +184,7 @@
                                 </div>
                                 <!-- End contact Icon -->
                                 <div class="contact-info ">
-                                    <h3>021 – 250 0120</h3>
+                                    <h3>+6221 – 250 0120</h3>
                                     <p class="text-white">sumbermineralglobalabadi@gmail.com</p>
                                 </div>
                                 <!-- End Contact Info -->
@@ -236,13 +236,19 @@
                         <div class="col-md-12 col-lg-6 ">
                             <div class="footer-widget ">
                                 <div class="section-heading ">
-                                    <h3>Hubungi Kami</h3>
+                                    <h3>Share Price</h3>
                                     <span class="animate-border border-black "></span>
                                 </div>
-                                <p>
-                                    <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
-                                    Reference site about Lorem Ipsum, giving information on its origins, as well.
-                                </p>
+                                {{-- <div class="card" style="width: 18rem;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div> --}}
+
                                 <form action="# ">
                                     <div class="form-row ">
 
@@ -297,9 +303,7 @@
         <!-- End Copyright -->
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script>
+
 </body>
 
 </html>

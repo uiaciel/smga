@@ -114,7 +114,7 @@
 
     <div class="album py-5 bg-light ">
         <div class="container ">
-            <h1 class="fw-light text-center mb-5 ">Berita & Media</h1>
+            <h1 class="fw-light text-center mb-5 ">{{ __('frontend.media') }}</h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
                 {{-- @foreach ($berita as $post)
                     <div class="col ">
@@ -256,13 +256,14 @@
         </section> --}}
     <section class="py-5 bg-secondary" id="calltoaction">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center ">
-                <div class="col-md-8 ms-5 ">
+            <div class="d-flex flex-column flex-md-row align-items-sm-center">
+                <div class="col-md-8 ms-5 me-5 ">
 
                     <p class="text-white fs-2">{{ __('frontend.mitra') }}</p>
 
                 </div>
-                <div class="d-grid gap-2 col-md-3 p-4 me-5 ">
+
+                <div class="d-grid gap-2 col-md-3 p-4">
                     <button class="btn btn-primary btn-lg " type="button ">{{ __('frontend.kontak') }}</button>
 
                 </div>
