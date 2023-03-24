@@ -9,6 +9,22 @@
     <meta name="title" content="PT. Sumber Mineral Global Abadi Tbk">
     <meta name="description" content="{{ __('frontend.profil') }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sumbermineralglobalabadi.com/">
+    <meta property="og:title" content="PT. Sumber Mineral Global Abadi Tbk">
+    <meta property="og:description"
+        content="PT. Sumber Mineral Global Abadi has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
+    <meta property="og:image" content="{{ asset('img/header-SMGA.png') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sumbermineralglobalabadi.com/">
+    <meta property="twitter:title" content="PT. Sumber Mineral Global Abadi Tbk">
+    <meta property="twitter:description"
+        content="PT. Sumber Mineral Global Abadi has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
+    <meta property="twitter:image" content="{{ asset('img/header-SMGA.png') }}">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
