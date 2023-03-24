@@ -199,6 +199,72 @@
             line-height: 28px;
         }
         
+        .animate-border2 {
+            position: relative;
+            display: block;
+            width: 115px;
+            height: 3px;
+            background: #007bff;
+        }
+        
+        .animate-border2:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            border-left: 10px solid #fff;
+            border-right: 10px solid #fff;
+            -webkit-animation: animborder2 4s linear infinite;
+            animation: animborder2 4s linear infinite;
+        }
+        
+        @-webkit-keyframes animborder2 {
+            0% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+            }
+            100% {
+                -webkit-transform: translateX(1024px);
+                transform: translateX(1024px);
+            }
+        }
+        
+        @keyframes animborder2 {
+            0% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+            }
+            100% {
+                -webkit-transform: translateX(1024px);
+                transform: translateX(1024px);
+            }
+        }
+        
+        .animate-border2.border-white:after {
+            border-color: #fff;
+        }
+        
+        .animate-border2.border-yellow:after {
+            border-color: #F5B02E;
+        }
+        
+        .animate-border2.border-orange:after {
+            border-right-color: #007bff;
+            border-left-color: #007bff;
+        }
+        
+        .animate-border2.border-ash:after {
+            border-right-color: #EEF0EF;
+            border-left-color: #EEF0EF;
+        }
+        
+        .animate-border2.border-offwhite:after {
+            border-right-color: #F7F9F8;
+            border-left-color: #F7F9F8;
+        }
+        
         .animate-border {
             position: relative;
             display: block;
@@ -226,8 +292,8 @@
                 transform: translateX(0px);
             }
             100% {
-                -webkit-transform: translateX(113px);
-                transform: translateX(113px);
+                -webkit-transform: translateX(100px);
+                transform: translateX(100px);
             }
         }
         
@@ -237,8 +303,8 @@
                 transform: translateX(0px);
             }
             100% {
-                -webkit-transform: translateX(113px);
-                transform: translateX(113px);
+                -webkit-transform: translateX(100px);
+                transform: translateX(100px);
             }
         }
         

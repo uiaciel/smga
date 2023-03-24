@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>PT. Sumber Mineral Global Abadi Tbk</title>
+    <meta name="title" content="PT. Sumber Mineral Global Abadi Tbk">
+    <meta name="description" content="{{ __('frontend.profil') }}">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -33,7 +35,7 @@
 </head>
 
 <body>
-    <nav class="py-0 bg-primary  ">
+    {{-- <nav class="py-0 bg-primary  ">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="bi bi-telephone-fill">
@@ -42,12 +44,12 @@
                             class="bi bi-envelope-fill"></i> info@sumberglobalenergy.com</a></li>
 
             </ul>
-            {{-- <ul class="nav d-none d-lg-block d-xl-none">
-                <li class="nav-item"><a href="#" class="nav-link link-light px-2">Login</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-light px-2">Sign up</a></li>
-            </ul> --}}
+            <ul class="nav d-none d-lg-block d-xl-none">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
+            </ul>
         </div>
-    </nav>
+    </nav> --}}
 
     <section class="bg-secondary">
         <div class="container">
@@ -102,11 +104,14 @@
                         </div>
                     </div>
                 </nav>
+
             </header>
             <!-- Navbar -->
 
 
+
         </div>
+        <span class="animate-border2 bg-primary " style="width: 100% !important"></span>
     </section>
     @yield('slider')
     <main>
@@ -160,10 +165,10 @@
 
                 </div>
                 <!-- End Col -->
-                <div class="col-md-12 col-lg-8 mt-4 ">
+                <div class="col-md-12 col-lg-7 ms-4 mt-4 ">
                     <div class="row ">
                         <div class="col-md-6 ">
-                            <div class="contact-us ">
+                            <div class="contact-us contact-us-last  ">
                                 <div class="contact-icon ">
                                     <i class="bi bi-map-fill " aria-hidden="true "></i>
                                 </div>
@@ -195,8 +200,8 @@
                     </div>
                     <!-- End Contact Row -->
                     <div class="row ">
-                        <div class="col-md-12 col-lg-6 ">
-                            <div class="footer-widget footer-left-widget ">
+                        <div class="col-md-12 col-lg-6 mb-3 ">
+                            <div class="footer-widget">
                                 <div class="section-heading ">
                                     <h3>Halaman</h3>
                                     <span class="animate-border border-black "></span>

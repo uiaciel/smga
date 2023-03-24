@@ -116,28 +116,25 @@
         <div class="container ">
             <h1 class="fw-light text-center mb-5 ">{{ __('frontend.media') }}</h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
-                {{-- @foreach ($berita as $post)
+                @forelse ($berita as $post)
                     <div class="col ">
                         <div class="card shadow-sm ">
-                            <img src="/storage/{{ $post->image }}" class="card-img-top" alt="{{ $post->title }}">
+                            <img src="/storage/{{ $post->image->path }}" class="card-img-top" alt="{{ $post->title }}">
 
                             <div class="card-body ">
-                                {{ $post->title }}
+                                <a href="/media/{{ $post->slug }}" class="text-decoration-none">
+                                    <h4>{{ $post->title }}</h4>
+                                </a>
                                 <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <a href="/b/{{ $post->slug }}" target="_blank"
-                                            class="btn btn-sm btn-outline-secondary ">Selengkapnya
-                                            ..</a>
-                                    </div>
+
                                     <small class="text-muted ">{{ $post->date }}</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                @endforeach --}}
-
-
-
+                @empty
+                    <p>Belum ada Berita</p>
+                @endforelse
 
             </div>
         </div>

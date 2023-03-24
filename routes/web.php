@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
@@ -24,6 +25,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
+Route::group(['middleware' => ['auth', 'can:isAdmin']], function () {
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/admincp', [HomeController::class, 'index'])->name('home');
+    Route::resource('/admincp/category', \App\Http\Controllers\CategoryController::class)->except('create', 'edit');
+    Route::resource('/admincp/posts', \App\Http\Controllers\PostController::class);
+    Route::post('/upload', [App\Http\Controllers\AdmincpController::class, 'tinymce'])->name('upload');
+});
+
+
+Route::get('/media/{slug}/', [App\Http\Controllers\PostController::class, 'showpost'])->name('showpost');
+Route::get('/category/{slug}', [App\Http\Controllers\CategoryController::class, 'show']);
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
