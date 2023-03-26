@@ -36,6 +36,8 @@ Route::group(['middleware' => ['auth', 'can:isAdmin']], function () {
 });
 
 Route::get('/contact-us', [App\Http\Controllers\FrontendController::class, 'contact']);
+Route::post('/contact-us/post', [App\Http\Controllers\FrontendController::class, 'contactpost'])->name('contactpost');
+
 Route::get('/media/{slug}/', [App\Http\Controllers\PostController::class, 'showpost'])->name('showpost');
 Route::get('/category/{slug}', [App\Http\Controllers\CategoryController::class, 'show']);
 

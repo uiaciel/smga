@@ -22,7 +22,7 @@
                             @enderror
 
 
-                            <form class="row g-3" action="{{ route('contacts.store') }}" method="POST">
+                            <form class="row g-3" action="{{ route('contactpost') }}" method="POST">
                                 @csrf
                                 <input name="date" type="date" id="date" hidden>
                                 <div class="col-md-6">
