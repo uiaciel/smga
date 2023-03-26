@@ -63,7 +63,7 @@
                                     <div class="col-md-3">
                                         <div class="custom-control custom-radio image-checkbox">
                                             <input type="radio" class="custom-control-input" id="ck2a" value="Full"
-                                                name="layout">
+                                                name="layout" {{ $post->layout == 'Full' ? 'checked' : '' }}>
                                             <label class="custom-control-label" for="ck2a">
                                                 <img src="/img/full-side.gif" alt="#" class="img-fluid">
                                             </label>
@@ -72,7 +72,7 @@
                                     <div class="col-md-3">
                                         <div class="custom-control custom-radio image-checkbox">
                                             <input type="radio" class="custom-control-input" id="ck2b" value="Sidebar"
-                                                name="layout">
+                                                name="layout" {{ $post->layout == 'Sidebar' ? 'checked' : '' }}>
                                             <label class="custom-control-label" for="ck2b">
                                                 <img src="/img/page-side.gif" alt="#" class="img-fluid">
                                             </label>
@@ -81,7 +81,7 @@
                                     <div class="col-md-3">
                                         <div class="custom-control custom-radio image-checkbox">
                                             <input type="radio" class="custom-control-input" value="Article" id="ck2c"
-                                                name="layout">
+                                                name="layout" {{ $post->layout == 'Article' ? 'checked' : '' }}>
                                             <label class="custom-control-label" for="ck2c">
                                                 <img src="/img/article-side.gif" alt="#" class="img-fluid">
                                             </label>

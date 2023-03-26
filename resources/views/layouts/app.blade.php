@@ -101,7 +101,7 @@
                                 <li class="nav-item "><a href="#"
                                         class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.esg') }}</a>
                                 </li>
-                                <li class="nav-item "><a href="#"
+                                <li class="nav-item "><a href="/contact-us"
                                         class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.kontak') }}</a>
                                 </li>
                                 <li class="nav-item dropdown ">
@@ -127,7 +127,7 @@
 
 
         </div>
-        <span class="animate-border2 bg-primary " style="width: 100% !important"></span>
+        {{-- <span class="animate-border2 bg-primary " style="width: 100% !important"></span> --}}
     </section>
     @yield('slider')
     <main>
@@ -247,7 +247,7 @@
                                         <a href="# ">CSR</a>
                                     </li>
                                     <li>
-                                        <a href="# ">Kontak Kami</a>
+                                        <a href="/contact-us">Kontak Kami</a>
                                     </li>
                                 </ul>
                             </div>
@@ -324,6 +324,9 @@
         <!-- End Copyright -->
 
     </footer>
+    <script>
+        document.getElementById('date').valueAsDate = new Date();
+    </script>
 
 </body>
 

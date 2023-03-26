@@ -31,10 +31,11 @@ Route::group(['middleware' => ['auth', 'can:isAdmin']], function () {
     Route::get('/admincp', [HomeController::class, 'index'])->name('home');
     Route::resource('/admincp/category', \App\Http\Controllers\CategoryController::class)->except('create', 'edit');
     Route::resource('/admincp/posts', \App\Http\Controllers\PostController::class);
+    Route::resource('/admincp/contacts', \App\Http\Controllers\ContactController::class);
     Route::post('/upload', [App\Http\Controllers\AdmincpController::class, 'tinymce'])->name('upload');
 });
 
-
+Route::get('/contact-us', [App\Http\Controllers\FrontendController::class, 'contact']);
 Route::get('/media/{slug}/', [App\Http\Controllers\PostController::class, 'showpost'])->name('showpost');
 Route::get('/category/{slug}', [App\Http\Controllers\CategoryController::class, 'show']);
 

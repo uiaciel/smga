@@ -261,7 +261,7 @@
                 </div>
 
                 <div class="d-grid gap-2 col-md-3 p-4">
-                    <button class="btn btn-primary btn-lg " type="button ">{{ __('frontend.kontak') }}</button>
+                    <a class="btn btn-primary btn-lg " href="/contact-us" type="button ">{{ __('frontend.kontak') }}</a>
 
                 </div>
             </div>
