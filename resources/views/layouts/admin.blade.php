@@ -283,6 +283,7 @@
     </div>
     <!--wrapper end-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="/assets/app-light.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <!--<script src="/tinymce/tinymce.min.js"></script>-->
@@ -422,6 +423,37 @@
         $(document).ready(function() {
             $('#data').DataTable();
         });
+    </script>
+    <script>
+        var fixHelperModified = function(e, tr) {
+                var $originals = tr.children();
+                var $helper = tr.clone();
+                $helper.children().each(function(index) {
+                    $(this).width($originals.eq(index).width())
+                });
+                return $helper;
+            },
+            updateIndex = function(e, ui) {
+                $('td.index', ui.item.parent()).each(function(i) {
+                    $(this).html(i + 1);
+
+
+                });
+
+                $('td input.in', ui.item.parent()).each(function(i) {
+                    $(this).attr('value', i + 1);
+
+
+
+                });
+
+            };
+
+
+        $("#sort tbody").sortable({
+            helper: fixHelperModified,
+            stop: updateIndex
+        }).disableSelection();
     </script>
 </body>
 

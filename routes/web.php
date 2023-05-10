@@ -32,7 +32,10 @@ Route::group(['middleware' => ['auth', 'can:isAdmin']], function () {
     Route::resource('/admincp/category', \App\Http\Controllers\CategoryController::class)->except('create', 'edit');
     Route::resource('/admincp/posts', \App\Http\Controllers\PostController::class);
     Route::resource('/admincp/contacts', \App\Http\Controllers\ContactController::class);
+    Route::resource('/admincp/menus', \App\Http\Controllers\MenuController::class);
     Route::post('/upload', [App\Http\Controllers\AdmincpController::class, 'tinymce'])->name('upload');
+
+    Route::post('/updates', [App\Http\Controllers\MenuController::class, 'updates'])->name('updates');
 });
 
 Route::get('/contact-us', [App\Http\Controllers\FrontendController::class, 'contact']);

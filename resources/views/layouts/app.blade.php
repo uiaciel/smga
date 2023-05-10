@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>PT. Sumber Mineral Global Abadi Tbk</title>
-    <meta name="title" content="PT. Sumber Mineral Global Abadi Tbk">
+    <title>PT. Sumber Mineral Global Abadi</title>
+    <meta name="title" content="PT. Sumber Mineral Global Abadi">
     <meta name="description" content="{{ __('frontend.profil') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sumbermineralglobalabadi.com/">
-    <meta property="og:title" content="PT. Sumber Mineral Global Abadi Tbk">
+    <meta property="og:title" content="PT. Sumber Mineral Global Abadi">
     <meta property="og:description"
         content="PT. Sumber Mineral Global Abadi has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
     <meta property="og:image" content="{{ asset('img/header-SMGA.png') }}">
@@ -20,7 +20,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sumbermineralglobalabadi.com/">
-    <meta property="twitter:title" content="PT. Sumber Mineral Global Abadi Tbk">
+    <meta property="twitter:title" content="PT. Sumber Mineral Global Abadi">
     <meta property="twitter:description"
         content="PT. Sumber Mineral Global Abadi has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
     <meta property="twitter:image" content="{{ asset('img/header-SMGA.png') }}">
@@ -77,7 +77,7 @@
                         <a href="/" class="navbar-brand mb-md-0 me-md-auto text-dark text-decoration-none">
 
                             <img src="/img/logo-icon-smga.png" class="img-fluid me-2" style=" width: 40px; ">
-                            <span class="fw-bold text-white sitetitle"> PT. Sumber Mineral Global Abadi Tbk</span>
+                            <span class="fw-bold text-white sitetitle"> PT. Sumber Mineral Global Abadi</span>
                         </a>
                         <button class="navbar-toggler btn-sm collapsed bg-primary" type="button"
                             data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
@@ -87,7 +87,7 @@
                         <div class="navbar-collapse collapse" id="navbarCollapse" style="">
                             <div class="me-lg-auto"></div>
                             <ul class="navbar-nav mb-2 mb-md-0">
-                                <li class="nav-item"><a href="#" class="nav-link active text-uppercase"
+                                <li class="nav-item"><a href="/" class="nav-link active text-uppercase"
                                         aria-current="page">{{ __('frontend.beranda') }}</a></li>
                                 <li class="nav-item "><a href="#"
                                         class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.tentang') }}</a>
