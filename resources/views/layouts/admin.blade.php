@@ -452,7 +452,11 @@
             $('#data').DataTable();
         });
     </script>
+<<<<<<< HEAD
     {{-- <script>
+=======
+    <script>
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
         var fixHelperModified = function(e, tr) {
                 var $originals = tr.children();
                 var $helper = tr.clone();
@@ -482,7 +486,11 @@
             helper: fixHelperModified,
             stop: updateIndex
         }).disableSelection();
+<<<<<<< HEAD
     </script> --}}
+=======
+    </script>
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
 </body>
 
 </html>

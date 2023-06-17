@@ -46,6 +46,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+<<<<<<< HEAD
     </div>
     <!-- Team Start -->
     <div class="container-xxl py-5">
@@ -58,6 +59,20 @@
                         <div class="team-text bg-white p-4">
                             <h6><a href="{{ $sub->menu->slug }}/{{ $sub->slug }}"
                                     class="text-dark">{{ $sub->title }}</a></h6>
+=======
+    </section>
+@endsection
+@section('content')
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-12 col-md-12 mx-auto">
+                <h1 class="fw-light">PT. Sumber Mineral Global Abadi</h1>
+                <p class="lead text-muted fs-3">{{ __('frontend.ringkasan') }}</p>
+                {{-- <p>
+                        <a href="#" class="btn btn-primary my-2">Hubungi Kami</a>
+
+                    </p> --}}
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
 
                         </div>
                     </div>

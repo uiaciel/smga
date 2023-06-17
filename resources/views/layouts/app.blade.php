@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+<<<<<<< HEAD
     <meta charset="utf-8" />
     {{-- <title>PT SUMBER GLOBAL ENERGY Tbk - {{ $data }}</title> --}}
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -31,6 +32,51 @@
     <link href="/css/custom.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
 
+=======
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PT. Sumber Mineral Global Abadi</title>
+    <meta name="title" content="PT. Sumber Mineral Global Abadi">
+    <meta name="description" content="{{ __('frontend.profil') }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sumbermineralglobalabadi.com/">
+    <meta property="og:title" content="PT. Sumber Mineral Global Abadi">
+    <meta property="og:description"
+        content="PT. Sumber Mineral Global Abadi has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
+    <meta property="og:image" content="{{ asset('img/header-SMGA.png') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sumbermineralglobalabadi.com/">
+    <meta property="twitter:title" content="PT. Sumber Mineral Global Abadi">
+    <meta property="twitter:description"
+        content="PT. Sumber Mineral Global Abadi has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
+    <meta property="twitter:image" content="{{ asset('img/header-SMGA.png') }}">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    {{-- <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json"> --}}
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
     <style>
         p {
             color: black;
@@ -232,9 +278,67 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div>
     <!-- Topbar End -->
     <!-- Navbar Start -->
+=======
+    </nav> --}}
+
+    <section class="bg-secondary">
+        <div class="container">
+
+            <header class="py-2">
+                <!-- Fixed navbar -->
+                <nav class="navbar navbar-expand-xl">
+                    <div class="container-fluid  align-items-center">
+                        <a href="/" class="navbar-brand mb-md-0 me-md-auto text-dark text-decoration-none">
+
+                            <img src="/img/logo-icon-smga.png" class="img-fluid me-2" style=" width: 40px; ">
+                            <span class="fw-bold text-white sitetitle"> PT. Sumber Mineral Global Abadi</span>
+                        </a>
+                        <button class="navbar-toggler btn-sm collapsed bg-primary" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "></span>
+                        </button>
+                        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                            <div class="me-lg-auto"></div>
+                            <ul class="navbar-nav mb-2 mb-md-0">
+                                <li class="nav-item"><a href="/" class="nav-link active text-uppercase"
+                                        aria-current="page">{{ __('frontend.beranda') }}</a></li>
+                                <li class="nav-item "><a href="#"
+                                        class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.tentang') }}</a>
+                                </li>
+                                <li class="nav-item "><a href="#"
+                                        class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.media') }}</a>
+                                </li>
+                                <li class="nav-item "><a href="#"
+                                        class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.investor') }}</a>
+                                </li>
+                                <li class="nav-item "><a href="#"
+                                        class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.esg') }}</a>
+                                </li>
+                                <li class="nav-item "><a href="/contact-us"
+                                        class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.kontak') }}</a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-white fw-bold" href="#"
+                                        id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        EN
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/locale/en">English</a></li>
+                                        <li><a class="dropdown-item" href="/locale/id">Indonesia</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
 
 
     <nav class="navbar navbar-expand-lg text-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
