@@ -5,7 +5,6 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-
                     <img class="w-100" src="/img/coal-sge-banner.jpg" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
@@ -15,7 +14,6 @@
                                         We are making world a Better place for you.
                                     </h1>
                                     <!-- <ol class="breadcrumb mb-4 pb-2">-->
-
                                 </div>
                             </div>
                         </div>
@@ -58,13 +56,24 @@
                         <div class="team-text bg-white p-4">
                             <h6><a href="{{ $sub->menu->slug }}/{{ $sub->slug }}"
                                     class="text-dark">{{ $sub->title }}</a></h6>
-
-                        </div>
-                    </div>
-                @endforeach --}}
+=======
+    </section>
+@endsection
+@section('content')
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-12 col-md-12 mx-auto">
+                <h1 class="fw-light">PT. Sumber Mineral Global Abadi</h1>
+                <p class="lead text-muted fs-3">{{ __('frontend.ringkasan') }}</p>
+                {{-- <p>
+                        <a href="#" class="btn btn-primary my-2">Hubungi Kami</a>
+                    </p> --}}
                 </div>
             </div>
+            @endforeach
         </div>
+    </div>
+    </div>
     </div>
     <!-- Team End -->
     <!-- About Start -->
@@ -220,9 +229,7 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-
                                             <img src="/storage/{{ $announ->image }}" class="img-fluid" />
-
                                             <a href="{{ route('announs.frontpage', $announ->slug) }}"
                                                 class="btn btn-primary mt-3">View More</a>
                                         </div>
@@ -249,7 +256,6 @@
                             <small>{{ $up }} <a href="/share-price" target="_blank">Detail</a></small>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -274,16 +280,10 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item text-center bg-light overflow-hidden h-100">
                             <img src="/storage/{{ $laporan->image }}" class="img-fluid" />
-
                             <div class="service-text position-relative text-center h-100 p-4">
                                 <h5 class="mb-3">{{ $laporan->title }}</h5>
-                                <!-- <p>
-                                                                                                                                                            Tempor erat elitr rebum at clita dolor diam ipsum sit diam
-                                                                                                                                                            amet diam et eos
-                                                                                                                                                          </p> -->
                                 <a class="small" href="/storage/{{ $laporan->pdf }}" target="_blank">DOWNLOAD<i
                                         class="fa fa-arrow-right ms-3"></i></a>
-
                             </div>
                         </div>
                     </div>
@@ -291,7 +291,6 @@
             </div>
         </div>
     </div>
-
     <div class="container-fluid my-5 py-5 wow fadeIn" data-wow-delay="0.1s"
         style="background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(/img/sge-banner.png) center center no-repeat;background-size: cover; visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
         <div class="container text-center py-5">
@@ -303,7 +302,6 @@
             </p>
         </div>
     </div>
-
     <!-- Appointment Start -->
     <!-- Appointment End -->
     <!-- BLOG Start -->
@@ -319,9 +317,6 @@
                         </h1>
                     </div>
                 </div>
-                <!-- <div class="col-lg-6 text-lg-end wow fadeInUp" data-wow-delay="0.3s">
-                                                                                                                                                                                      <a class="btn btn-primary py-3 px-5" href="">More Services</a>
-                                                                                                                                                                                    </div> -->
             </div>
             <div class="row g-4 justify-content-center">
                 @foreach ($postpublish as $post)
@@ -331,7 +326,6 @@
                                 <img class="img-fluid" src="/storage/{{ $post->image->path }}" alt="" />
                                 {{-- @foreach ($post->images as $image)
                                 @if ($loop->first)
-
                                 @endif
                             @endforeach --}}
                             @else
@@ -368,19 +362,14 @@
                             Subsidiaries
                         </h1>
                     </div>
-                    <!-- <p class="text-white mb-0">
-                                                                                                                                                                                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                                                                                                                                                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-                                                                                                                                                                                        lorem sit clita duo justo magna dolore erat amet
-                                                                                                                                                                                      </p> -->
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeIn" data-wow-delay="0.5s"></div>
             </div>
         </div>
     </div>
-    <!-- Testimonial Start -->
-    <!-- <div class="container-xxl py-5"><!-- Testimonial End -->
+
     </div>
+
     <!-- Modal -->
     @if (empty($modal->id))
     @else
@@ -395,14 +384,10 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-
                         <img src="/storage/{{ $modal->image }}" class="card-img-top">
-
                         <p class="text-center">
                             <a href="/announcements/{{ $modal->slug }}">View More</a>
                         </p>
-
-
                     </div>
                 </div>
             </div>
