@@ -8,25 +8,13 @@ use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
-    }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function contact()
     {
         return view('frontend.contact');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
     public function contactpost(Request $request)
     {
         $validatedData = $request->validate([
@@ -55,6 +43,7 @@ class FrontendController extends Controller
         return redirect()->back()
             ->with('success', 'Message send successfully.');
     }
+<<<<<<< HEAD
 
     public function showpage($slug)
     {
@@ -98,4 +87,6 @@ class FrontendController extends Controller
     {
         //
     }
+=======
+>>>>>>> 27330137e9b415e4b4ec0294de1b27f13403f94e
 }

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('lang')->default('en');
             $table->bigInteger('post_id')->unsigned()->nullable();
             $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
-            $table->integer('id_menu')->default(1);
+            $table->integer('id_menu')->nullable();
             $table->date('date')->nullable();
             $table->text('content')->nullable();
             // $table->text('excerpt')->nullable();

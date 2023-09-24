@@ -11,7 +11,11 @@
             <!-- Modal -->
             <div class="modal fade" id="createMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog        ">
+<<<<<<< HEAD
+                    <form action="{{ route('menus.store') }}" method="POST">
+=======
                     <form>
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
                         @csrf
                         <div class="modal-content">
                             <div class="modal-header">
@@ -21,6 +25,29 @@
                             </div>
                             <div class="modal-body">
 
+<<<<<<< HEAD
+
+                                <div class="mb-3">
+                                    <label for="exampleInputText1" class="form-label">Title Menu</label>
+                                    <input type="text" class="form-control" id="exampleInputText1"
+                                        aria-describedby="textHelp" name="title">
+                                    <div id="textHelp" class="form-text">We'll never share your texts with anyone else.
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+
+                                    <label for="exampleInputText1" class="form-label">Position</label>
+
+                                    <select class="form-select" aria-label="Default select example" name="position">
+                                        {{-- @foreach ($page as $page)
+                                        <option value="/page/{{ $page->slug }}">{{ $page->title }}</option>
+                                    @endforeach --}}
+
+                                        <option value="Header">Header</option>
+                                        <option value="Footer">Footer</option>
+                                        <option value="Sidebar">Sidebar</option>
+=======
                                 <div class="mb-3">
                                     <label for="exampleInputText1" class="form-label">Page</label>
 
@@ -32,17 +59,29 @@
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
                                     </select>
 
                                 </div>
 
+<<<<<<< HEAD
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+
+=======
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
                             </div>
 
 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<<<<<<< HEAD
+
+
+=======
                             <button type="submit" class="btn btn-primary">Save changes</button>
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
                         </div>
                 </div>
 
@@ -91,6 +130,21 @@
 
 
         <div class="row">
+<<<<<<< HEAD
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        @foreach ($menus as $menu)
+                            <ul>
+                                <li>{{ $menu->title }}</li>
+                            </ul>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+
+=======
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header bg-dark text-white">
@@ -210,5 +264,6 @@
             </div>
 
         </div>
+>>>>>>> 0449ca9798027f9ba838cc592c3885ce3657dc01
     </div>
 @endsection
