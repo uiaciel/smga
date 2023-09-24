@@ -28,7 +28,7 @@
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-12 col-md-12 mx-auto">
-                <h1 class="fw-light">PT. Sumber Mineral Global Abadi</h1>
+                <h1 class="fw-light">PT. Sumber Mineral Global Abadi Tbk</h1>
                 <p class="lead text-muted fs-3">{{ __('frontend.ringkasan') }}</p>
                 {{-- <p>
                         <a href="#" class="btn btn-primary my-2">Hubungi Kami</a>
@@ -112,7 +112,7 @@
 
     </section>
 
-    <div class="album py-5 bg-light ">
+    <div class="album py-5 bg-light " id="news">
         <div class="container ">
             <h1 class="fw-light text-center mb-5 ">{{ __('frontend.media') }}</h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">

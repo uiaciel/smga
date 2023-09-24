@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Page;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -53,6 +54,16 @@ class FrontendController extends Controller
 
         return redirect()->back()
             ->with('success', 'Message send successfully.');
+    }
+
+    public function showpage($slug)
+    {
+
+        $post = Page::where('slug', $slug)->first();
+
+        return view('frontend.page', [
+            'post' => $post,
+        ]);
     }
 
 

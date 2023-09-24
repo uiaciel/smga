@@ -33,6 +33,7 @@ Route::group(['middleware' => ['auth', 'can:isAdmin']], function () {
     Route::resource('/admincp/posts', \App\Http\Controllers\PostController::class);
     Route::resource('/admincp/contacts', \App\Http\Controllers\ContactController::class);
     Route::resource('/admincp/menus', \App\Http\Controllers\MenuController::class);
+    Route::resource('/admincp/pages', \App\Http\Controllers\PageController::class);
     Route::post('/upload', [App\Http\Controllers\AdmincpController::class, 'tinymce'])->name('upload');
 
     Route::post('/updates', [App\Http\Controllers\MenuController::class, 'updates'])->name('updates');
@@ -43,5 +44,6 @@ Route::post('/contact-us/post', [App\Http\Controllers\FrontendController::class,
 
 Route::get('/media/{slug}/', [App\Http\Controllers\PostController::class, 'showpost'])->name('showpost');
 Route::get('/category/{slug}', [App\Http\Controllers\CategoryController::class, 'show']);
+Route::get('/{slug}', [App\Http\Controllers\FrontendController::class, 'showpage']);
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

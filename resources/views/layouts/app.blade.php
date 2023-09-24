@@ -5,24 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>PT. Sumber Mineral Global Abadi</title>
-    <meta name="title" content="PT. Sumber Mineral Global Abadi">
+    <title>PT. Sumber Mineral Global Abadi Tbk</title>
+    <meta name="title" content="PT. Sumber Mineral Global Abadi Tbk">
     <meta name="description" content="{{ __('frontend.profil') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sumbermineralglobalabadi.com/">
-    <meta property="og:title" content="PT. Sumber Mineral Global Abadi">
+    <meta property="og:title" content="PT. Sumber Mineral Global Abadi Tbk">
     <meta property="og:description"
-        content="PT. Sumber Mineral Global Abadi has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
+        content="PT. Sumber Mineral Global Abadi Tbk has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
     <meta property="og:image" content="{{ asset('img/header-SMGA.png') }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sumbermineralglobalabadi.com/">
-    <meta property="twitter:title" content="PT. Sumber Mineral Global Abadi">
+    <meta property="twitter:title" content="PT. Sumber Mineral Global Abadi Tbk">
     <meta property="twitter:description"
-        content="PT. Sumber Mineral Global Abadi has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
+        content="PT. Sumber Mineral Global Abadi Tbk has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products">
     <meta property="twitter:image" content="{{ asset('img/header-SMGA.png') }}">
 
     <!-- CSRF Token -->
@@ -51,22 +51,6 @@
 </head>
 
 <body>
-    {{-- <nav class="py-0 bg-primary  ">
-        <div class="container d-flex flex-wrap">
-            <ul class="nav me-auto">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="bi bi-telephone-fill">
-                            +6221 – 250 0120</i></a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i
-                            class="bi bi-envelope-fill"></i> info@sumberglobalenergy.com</a></li>
-
-            </ul>
-            <ul class="nav d-none d-lg-block d-xl-none">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
-            </ul>
-        </div>
-    </nav> --}}
-
     <section class="bg-secondary">
         <div class="container">
 
@@ -77,7 +61,7 @@
                         <a href="/" class="navbar-brand mb-md-0 me-md-auto text-dark text-decoration-none">
 
                             <img src="/img/logo-icon-smga.png" class="img-fluid me-2" style=" width: 40px; ">
-                            <span class="fw-bold text-white sitetitle"> PT. Sumber Mineral Global Abadi</span>
+                            <span class="fw-bold text-white sitetitle"> PT. Sumber Mineral Global Abadi Tbk</span>
                         </a>
                         <button class="navbar-toggler btn-sm collapsed bg-primary" type="button"
                             data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
@@ -92,11 +76,26 @@
                                 <li class="nav-item "><a href="#"
                                         class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.tentang') }}</a>
                                 </li>
-                                <li class="nav-item "><a href="#"
+                                <li class="nav-item "><a href="/#news"
                                         class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.media') }}</a>
                                 </li>
                                 <li class="nav-item "><a href="#"
                                         class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.investor') }}</a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-white fw-bold" href="#"
+                                        id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        GCG
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/struktur-organisasi">Struktur
+                                                Organisasi</a></li>
+
+                                        <li><a class="dropdown-item" href="/piagam-komite-audit">Piagam Komite
+                                                Audit</a></li>
+
+                                    </ul>
                                 </li>
                                 <li class="nav-item "><a href="#"
                                         class="nav-link fw-bold text-white text-uppercase">{{ __('frontend.esg') }}</a>
@@ -205,8 +204,8 @@
                                 </div>
                                 <!-- End contact Icon -->
                                 <div class="contact-info ">
-                                    <h3>+6221 – 250 0120</h3>
-                                    <p class="text-white">sumbermineralglobalabadi@gmail.com</p>
+                                    <h3>+62 21 2500120</h3>
+                                    <p class="text-white">info@smgagroup.com</p>
                                 </div>
                                 <!-- End Contact Info -->
                             </div>

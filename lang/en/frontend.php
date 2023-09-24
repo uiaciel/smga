@@ -33,7 +33,7 @@ return [
     'halaman' => 'Pages',
     'karir' => 'Career',
     'mediasosial' => 'Follow Us',
-    'profil' => 'PT. Sumber Mineral Global Abadi has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products',
+    'profil' => 'PT. Sumber Mineral Global Abadi Tbk has experience in the mineral business supported by qualified natural resources as well as professional human resources as our step to provide quality and sustainable products',
     'keunggulan_1' => 'Strict quality control is applied throughout the entire process, starting from the selection of nickel, coal, limestone, and silica sand mining sources to ensure quality and specication products are released from our stockpile facilities',
     'keunggulan_2' => 'Raw materials are carefully picked and tested before shipping. The machines are calibrated regularly to ensure accuracy and routine performance evaluations are carried out as well as continuous training to maintain overall and sustainable performance',
     'keunggulan_3' => 'Providing nickel, limestone, silica sand and coal products according to customer needs and requests. We always push ourselves to improve the quality of our products and services in order to meet clients demands.',

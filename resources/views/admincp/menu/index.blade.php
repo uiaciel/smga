@@ -8,7 +8,6 @@
                 </h3>
             </div>
 
-
             <!-- Modal -->
             <div class="modal fade" id="createMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog        ">
@@ -50,6 +49,47 @@
                 </form>
             </div>
         </div>
+
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Parent</th>
+                                <th scope="col">Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($menus as $menu)
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>{{ $menu->title }}</td>
+                                    <td>{{ $menu->upmenu }}</td>
+                                    <td></td>
+                                </tr>
+                            @endforeach
+                            <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row">
             <div class="col-md-4">
                 <div class="card">

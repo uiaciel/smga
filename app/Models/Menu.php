@@ -9,4 +9,9 @@ class Menu extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    public function upmenu()
+    {
+        return $this->belongsTo('App\Models\Menu', 'parent');
+    }
 }
